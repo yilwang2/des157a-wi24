@@ -89,6 +89,10 @@ section ul li a {
     font-family: 'Poppins', sans-serif;
 }
 
+section ul li a:hover {
+    background-color: #fae7e7;
+}
+
 footer {
     text-align: center;
 }
