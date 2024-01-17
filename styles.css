@@ -63,7 +63,7 @@ main {
     justify-content: center;
     gap: 100px;
     border-radius: 20px;
-    padding: 5px;
+    padding: 8px;
     background-color: #F9F3CC;
 }
 
@@ -82,10 +82,10 @@ section ul li a {
     display: block;
     text-decoration: none;
     color: black;
-    padding: 8px;
+    padding: 9px;
     border-radius: 10px;
     border: 3px solid #CA8787;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     font-family: 'Poppins', sans-serif;
 }
 
