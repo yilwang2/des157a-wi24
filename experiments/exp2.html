@@ -3,9 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Experiment 2</title>
 </head>
 <body>
-    
+    <h1>Experiment 2</h1>
+    <p>You picked the color </p>
+    <script>
+        /* My program is prompt user to enter a color from the color list and change the background color to the color entered by user. If user enter "random", the background will be a random color.*/
+
+        var vaildColors = ["red", "blue", "yellow", "white"];
+        var selectedColor = prompt("Please enter one of the color form 'red', 'blue', 'yellow', and 'white' or 'random'", "").toLowerCase();
+
+        function randomInt(min, max){
+            var num0fValues = max - min + 1;
+            var randomNum = Math.random();
+            var randomVal = randomNum * num0fValues;
+            var roundedRandomVal = Math.floor(randomVal);
+            var finalVal = min + roundedRandomVal;
+
+            return finalVal;
+        }
+
+        function randomColor() {
+            // set a new string start with #
+            var hex ="#";
+            // generate 6 random number, turn them into hexadecimal, to form a hex color, such as #4c73c1
+            for(var i = 0; i < 6; i++) {
+                // use random int generator to generate random number between 0 and 15
+                var num = randomInt(0,15);
+                // transform the new random number to hexadecimal, append the hexadecimal string to 'hex'
+                hex=hex.concat(num.toString(16));
+            }
+            // return the random hexadecimal color number
+            return hex;
+        }
+
+        if (selectedColor=="random") {
+            // call function "randomColor" to generate a random color in hexadecimal format
+            var color = randomColor();
+            document.body.style.backgroundColor=color;
+            document.querySelector("p").innerHTML = `The random color is ${color}`;
+        } else if (vaildColors.includes(selectedColor)) {
+            // change the background color to the selected color
+            document.body.style.backgroundColor=selectedColor;
+            document.querySelector("p").innerHTML = `You pick the color: ${selectedColor}`;
+        } else {
+            document.querySelector("p").innerHTML = "You didn't entered a color from the list or random";
+        }
+    </script>
 </body>
 </html>
