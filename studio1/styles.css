@@ -1,0 +1,67 @@
+body {
+    background: url(images/formbg.png);
+    background-size: cover;
+}
+
+h1 {
+    font-family: 'Rubik Puddles', system-ui;
+    font-size: 80px;
+    position: absolute;
+    top:100px;
+    left:260px;
+}
+
+h2 {
+    font-family: 'Assistant', sans-serif;
+    font-size: 30px;
+    position: absolute;
+    top:220px;
+    left:290px;
+
+}
+
+form {
+    font-family: 'Assistant', sans-serif;
+    font-size: 20px;
+    padding: 30px;
+}
+
+main {
+    background-color: #67729db9;
+    color: white;
+    width: 20%;
+    border-radius: 20px;
+    position: relative;
+    top:90px;
+    left:1000px;
+}
+
+input, label {
+    display: block;
+    line-height: 1.3em;
+}
+
+input {
+    margin-bottom: 1em;
+    background-color: #67729da7;
+    border-radius: 10px;
+    border-color: #CFE8FF;
+    border-width: 3px;
+    color: #fbf0b3
+}
+
+#send-it {
+    background-color: #8CC7FD;
+    color: white;
+    border-width: 0;
+    padding: 8px 15px 8px 15px;
+    margin-top: 30px;
+    position: relative;
+    left:35px;
+}
+
+footer {
+    text-align: center;
+    font-family: 'Assistant', sans-serif;
+    font-size: 20px;
+}
