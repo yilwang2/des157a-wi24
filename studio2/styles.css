@@ -1,7 +1,73 @@
-/* body {
-    background-color: bisque;
+:root {
+    --sliderwidth: 0;
 }
 
-article {
-    background-color: pink;
+@keyframes moveSlider {
+    from { left: 0; }
+    to { left: var(--sliderwidth) }
+}
+.animate {
+    animation-name: moveSlider;
+    animation-duration: 25s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+body {
+    background: url(images/background.png);
+}
+
+header {
+    line-height: 0.5em;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Micro 5", sans-serif;
+    font-size: 85px;
+}
+
+h2 {
+    font-family: "Kode Mono", monospace;
+}
+
+/* p {
+    font-family: "Fredoka", sans-serif;
 } */
+
+#one {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.slider {
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 300px;
+    margin-bottom: 60px;
+    margin-top: 90px;
+}
+
+.slider div img {
+    height: 100%;
+    display: block;
+    margin-right: 0;
+    border-radius: 30px;
+}
+
+.a, .b {
+    display: flex;
+    height: 100%;
+    font-family: "Kode Mono", monospace;
+    text-align: center;
+    font-size: 25px;
+    line-height: 2em;
+ }
+
+footer {
+    font-family: "Fredoka", sans-serif;
+    text-align: center;
+    margin-top: 90px;
+}
