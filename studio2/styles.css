@@ -31,10 +31,6 @@ h2 {
     font-family: "Kode Mono", monospace;
 }
 
-/* p {
-    font-family: "Fredoka", sans-serif;
-} */
-
 #one {
     width: 100%;
     overflow-x: hidden;
@@ -57,6 +53,10 @@ h2 {
     border-radius: 30px;
 }
 
+img:hover {
+    cursor: pointer;
+    }
+
 .a, .b {
     display: flex;
     height: 100%;
@@ -65,6 +65,83 @@ h2 {
     font-size: 25px;
     line-height: 2em;
  }
+
+ .corner {
+    font-size: 40px;
+    border:none;
+    background-color: transparent;
+    color:tomato;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    outline: none;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showing {
+    visibility: visible;
+    opacity: 1;
+}
+
+.overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transition-property: visibility, opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+.overlay article {
+    box-sizing: border-box;
+    background-color:#fff;
+    border-radius: 30px;
+    padding: 40px;
+    width: 50vw;
+    height: 80vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow-y: scroll;
+    line-height: 1em;
+    text-align: center;
+}
+
+.overlay article p {
+    font-family: "Fredoka", sans-serif;
+    text-align: left;
+    line-height: 1.5em;
+}
+
+.overlay article img {
+    border-radius: 30px;
+}
+
+button {
+    background-color: #f3d7d7;
+    border-color: #f7b0b0;
+    border-radius: 10px;
+    padding: 8px;
+    font-family: "Fredoka", sans-serif;
+    font-size: 20px;
+    transition-timing-function: ease;
+    transition: all 200ms;
+}
+
+button:hover {
+    background-color: #f66c31;
+    color: #fff;
+}
+
 
 footer {
     font-family: "Fredoka", sans-serif;
