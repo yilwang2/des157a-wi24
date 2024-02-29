@@ -1,3 +1,122 @@
-h1 {
-    
+body {
+    background: url(images/bg.png);
+    background-size: cover;
 }
+
+header {
+    line-height: 1em;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Barriecito", system-ui;
+    font-size: 64px;
+    color: #FFD5D5;
+    margin-top: 70px;
+    margin-bottom: 40px;
+
+}
+
+h2 {
+    font-family: "Itim", cursive;
+    color: white;
+    font-size: 36px;
+}
+
+article p {
+    font-family: "Itim", cursive;
+    font-size: 24px;
+    padding: 0 150px 5px 150px;
+    line-height: 1.3em;
+    color: #fcf5ce;
+}
+
+.player1 h2{
+    position: absolute;
+    top: 310px;
+    left: 260px;
+}
+
+.player1 img{
+    position: absolute;
+    top: 370px;
+    left: 170px;
+}
+
+.player2 h2{
+    position: absolute;
+    top: 300px;
+    left: 1060px;
+}
+
+.player2 img{
+    position: absolute;
+    top: 360px;
+    left: 950px;
+}
+
+#gamecontrol {
+    text-align: center;
+    line-height: 1em;
+    margin-top: 20px;
+    /* position: absolute;
+    top: 580px;
+    left: 500px; */
+}
+
+#gamecontrol h2 {
+    color: black;
+    font-size: 24px;
+}
+
+button {
+    background-color: #3F489A;
+    color: #fff;
+    border-width: 0;
+    border-radius: 20px;
+    padding: 12px 22px 12px 22px;
+    font-family: "Fredericka the Great", serif;
+    font-size: 28px;
+    transition-timing-function: ease;
+    transition: all 300ms;
+}
+
+button:hover {
+    background-color: #f1f7ab;
+    color: black;
+    border-width: 0;
+}
+
+footer {
+    font-family: "Itim", cursive;
+    text-align: center;
+    margin-top: 22px;
+    margin-bottom: 20px;
+}
+
+#game h2 {
+    color: black;
+    font-size: 28px;
+}
+
+#game {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#actions {
+    text-align: center;
+}
+
+#actions h2 {
+    color: black;
+    font-size: 28px;
+}
+
+#score h2 {
+    color: black;
+    font-size: 28px;
+    text-align: center;
+}
+
+
