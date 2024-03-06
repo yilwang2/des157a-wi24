@@ -32,8 +32,7 @@
         // console.log(gameData.index);
 
         // Set up game control buttons
-        gameControl.innerHTML = '<h2>Click the Quit button to quit the game</h2>'
-        gameControl.innerHTML += '<button id="quit">Quit</button>';
+        gameControl.innerHTML = '<button id="quit">Quit</button>';
 
         // Event Listener for Quit Button
         document.getElementById('quit').addEventListener("click", function(){

@@ -57,7 +57,7 @@ article p {
 #gamecontrol {
     text-align: center;
     line-height: 1em;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 #gamecontrol button {
@@ -65,16 +65,12 @@ article p {
     color: black;
     transition-timing-function: ease;
     transition: all 300ms;
+    font-size: 20px;
 }
 
 #gamecontrol button:hover {
     background-color: #f1f7ab;
     border-width: 0;
-}
-
-#gamecontrol h2 {
-    color: black;
-    font-size: 24px;
 }
 
 button {
@@ -84,7 +80,7 @@ button {
     border-radius: 20px;
     padding: 12px 22px 12px 22px;
     font-family: "Fredericka the Great", serif;
-    font-size: 28px;
+    font-size: 26px;
     transition-timing-function: ease;
     transition: all 300ms;
 }
