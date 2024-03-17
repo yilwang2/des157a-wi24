@@ -50,12 +50,13 @@ h2 {
     height: 100%;
     display: block;
     margin-right: 0;
-    border-radius: 30px;
+    cursor: pointer;
 }
 
-img:hover {
-    cursor: pointer;
-    }
+/* .slider div img:hover {
+    border-color: #f7f7ea;
+    border-width: 5px;
+} */
 
 .a, .b {
     display: flex;
@@ -65,18 +66,6 @@ img:hover {
     font-size: 25px;
     line-height: 2em;
  }
-
- .corner {
-    font-size: 40px;
-    border:none;
-    background-color: transparent;
-    color:tomato;
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    cursor: pointer;
-    outline: none;
-}
 
 .hidden {
     visibility: hidden;
@@ -103,7 +92,6 @@ img:hover {
 .overlay article {
     box-sizing: border-box;
     background-color:#fff;
-    border-radius: 30px;
     padding: 40px;
     width: 50vw;
     height: 80vh;
@@ -122,29 +110,45 @@ img:hover {
     line-height: 1.5em;
 }
 
-.overlay article img {
+/* .overlay article img {
     border-radius: 30px;
+} */
+
+.corner {
+    font-size: 40px;
+    border:none;
+    background-color: transparent;
+    color:tomato;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    outline: none;
 }
 
 button {
-    background-color: #f3d7d7;
-    border-color: #f7b0b0;
     border-radius: 10px;
-    padding: 8px;
-    font-family: "Fredoka", sans-serif;
-    font-size: 20px;
     transition-timing-function: ease;
     transition: all 200ms;
 }
 
 button:hover {
-    background-color: #f66c31;
+    background-color: #fa9c74;
     color: #fff;
 }
 
-
 footer {
-    font-family: "Fredoka", sans-serif;
+    font-family: "Kode Mono", monospace;
+    font-size: 20px;
     text-align: center;
     margin-top: 90px;
 }
+
+/* #rose{
+    cursor:pointer;
+}
+
+#rose:hover{
+    border-color: rgb(37, 168, 225);
+    border-width: 3px;
+} */
