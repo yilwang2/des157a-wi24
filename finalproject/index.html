@@ -10,6 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka&family=Kode+Mono&family=Micro+5&display=swap" rel="stylesheet">
 
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
     <link href="styles.css" rel="stylesheet">
     <script src="script.js" defer></script>
 </head>
@@ -53,12 +57,14 @@
     <section id="ol-rose" class="overlay hidden">
         <article>
             <h2>Roses</h2>
-            <div>
-                <img src="images/rose.jpg" alt="Roses image" width="300">
-                <img src="images/rose1.jpg" alt="Roses image 1">
-                <img src="images/rose2.jpg" alt="Roses image 2">
-                <img src="images/rose3.jpg" alt="Roses image 3">
-            </div>
+
+            <img class="roseSlides" src="images/rose.jpg" alt="Roses image0">
+            <img class="roseSlides" src="images/rose1.jpg" alt="Roses image1">
+            <img class="roseSlides" src="images/rose2.jpg" alt="Roses image2">
+            <img class="roseSlides" src="images/rose3.jpg" alt="Roses image3">
+            <button class="prev" onclick="roseplusDivs(-1)"><i class="fas fa-arrow-left"></i></button>
+            <button class="next" onclick="roseplusDivs(+1)"><i class="fas fa-arrow-right"></i></button>
+
             <p>This LEGO set is designed with the idea of roses that won't wither, commemorating a special occasion such as Valentine's Day or Mother's Day. This LEGO set comes with 2 red flowers, green leaves, and an adjustable-length stem. This Lego is easy to assemble without a lot of small parts and doesn't take long.</p>
             <button class="corner close">&otimes;</button>
         </article>
@@ -68,12 +74,14 @@
     <section id="ol-sunflower" class="overlay hidden">
         <article>
             <h2>Sunflowers</h2>
-            <div>
-                <img src="images/sunflower.jpg" alt="Sunflowers image" width="300">
-                <img src="images/sunflower1.jpg" alt="Sunflowers image 1">
-                <img src="images/sunflower2.jpg" alt="Sunflowers image 2">
-                <img src="images/sunflower3.jpg" alt="Sunflowers image 3">
-            </div>
+
+            <img class="sunSlides" src="images/sunflower.jpg" alt="Sunflowers image">
+            <img class="sunSlides" src="images/sunflower1.jpg" alt="Sunflowers image 1">
+            <img class="sunSlides" src="images/sunflower2.jpg" alt="Sunflowers image 2">
+            <img class="sunSlides" src="images/sunflower3.jpg" alt="Sunflowers image 3">
+            <button class="prev" onclick="sunplusDivs(-1)"><i class="fas fa-arrow-left"></i></button>
+            <button class="next" onclick="sunplusDivs(+1)"><i class="fas fa-arrow-right"></i></button>
+
             <p>This LEGO set is designed with the idea that sunflowers bring happy emotions and warmth to their surroundings, and the bright yellow color will brighten the mood. Included in this LEGO set are 2 sunflower flowers with adjustable green stems and leaves. This LEGO is easy to put together, except that many small petals require patience to mount on, but it doesn't take a lot of time.</p>
             <button class="corner close">&otimes;</button>
         </article>
@@ -83,13 +91,15 @@
     <section id="ol-bouquet" class="overlay hidden">
         <article>
             <h2>Flower Bouquet</h2>
-            <div>
-                <img src="images/bouquet.jpg" alt="Bouquet image" width="300">
-                <img src="images/bouquet1.jpg" alt="Bouquet image 1">
-                <img src="images/bouquet2.jpg" alt="Bouquet image 2">
-                <img src="images/bouquet3.jpg" alt="Bouquet image 3">
-                <img src="images/bouquet4.jpg" alt="Bouquet image 4">
-            </div>
+
+            <img class="bouqSlides" src="images/bouquet.jpg" alt="bouquet image">
+            <img class="bouqSlides" src="images/bouquet1.jpg" alt="bouquet image 1">
+            <img class="bouqSlides" src="images/bouquet2.jpg" alt="bouquet image 2">
+            <img class="bouqSlides" src="images/bouquet3.jpg" alt="bouquet image 3">
+            <img class="bouqSlides" src="images/bouquet4.jpg" alt="bouquet image 4">
+            <button class="prev" onclick="bouqplusDivs(-1)"><i class="fas fa-arrow-left"></i></button>
+            <button class="next" onclick="bouqplusDivs(+1)"><i class="fas fa-arrow-right"></i></button>
+
             <p>The idea behind the design of this LEGO is that different types of flowers come together in beautiful bouquets by matching shapes and colors. There are 5 stems included in this LEGO set with a mix of flower and leaf varieties. It takes some time to put this LEGO set together as there are many different flowers, each one is put together differently and some have more petals. Although it takes time to put this bouquet together, the process of putting it together is very fun, and seeing one flower completed and then paired together is like pruning and arranging flowers.</p>
             <button class="corner close">&otimes;</button>
         </article>
@@ -99,12 +109,14 @@
     <section id="ol-orchid" class="overlay hidden">
         <article>
             <h2>Orchid</h2>
-            <div>
-                <img src="images/orchid.jpg" alt="Orchid image" width="300">
-                <img src="images/orchid1.jpg" alt="Orchid image 1">
-                <img src="images/orchid2.jpg" alt="Orchid image 2">
-                <img src="images/orchid3.jpg" alt="Orchid image 3">
-            </div>
+
+            <img class="orcSlides" src="images/orchid.jpg" alt="Orchid image">
+            <img class="orcSlides" src="images/orchid1.jpg" alt="Orchid image 1">
+            <img class="orcSlides" src="images/orchid2.jpg" alt="Orchid image 2">
+            <img class="orcSlides" src="images/orchid3.jpg" alt="Orchid image 3">
+            <button class="prev" onclick="orcplusDivs(-1)"><i class="fas fa-arrow-left"></i></button>
+            <button class="next" onclick="orcplusDivs(+1)"><i class="fas fa-arrow-right"></i></button>
+
             <p>This LEGO design can be used to create an elegant orchid ornament for the home or office, inspired by real orchids. The finished product of this LEGO is a larger ornament, just like a real orchid pot plant. There aren't a lot of small parts in this LEGO, but there are many parts that need to be completed, such as the pot, leaves, stem, and flower parts, which will also take some time.</p>
             <button class="corner close">&otimes;</button>
         </article>
@@ -114,13 +126,15 @@
     <section id="ol-night" class="overlay hidden">
         <article>
             <h2>The Starry Night</h2>
-            <div>
-                <img src="images/starrynight.jpg" alt="Starry Night image" width="300">
-                <img src="images/starrynight1.jpg" alt="Starry Night image 1">
-                <img src="images/starrynight2.jpg" alt="Starry Night image 2">
-                <img src="images/starrynight3.jpg" alt="Starry Night image 3">
-                <img src="images/starrynight4.jpg" alt="Starry Night image 4">
-            </div>
+
+            <img class="starSlides" src="images/starrynight.jpg" alt="Starry Night image">
+            <img class="starSlides" src="images/starrynight1.jpg" alt="Starry Night image 1">
+            <img class="starSlides" src="images/starrynight2.jpg" alt="Starry Night image 2">
+            <img class="starSlides" src="images/starrynight3.jpg" alt="Starry Night image 3">
+            <img class="starSlides" src="images/starrynight4.jpg" alt="Starry Night image 4">
+            <button class="prev" onclick="starplusDivs(-1)"><i class="fas fa-arrow-left"></i></button>
+            <button class="next" onclick="starplusDivs(+1)"><i class="fas fa-arrow-right"></i></button>
+
             <p>The design of this LEGO is based on Van Gogh's Starry Night painting. The finished product of this LEGO is a three-dimensional painting of the starry sky, which is a beautiful three-dimensional design and is perfect for decorating your home. This LEGO takes a lot of time to put together, so you can choose to put it together with a friend. First of all, there are a lot of parts, there are also a lot of small parts, and some of the colors of the parts are also very similar, you need to carefully check the drawings to put them together. But I enjoy the process of putting together LEGO so I don't find it boring, I did it with my boyfriend and felt a sense of accomplishment when I finished.</p>
             <button class="corner close">&otimes;</button>
         </article>
